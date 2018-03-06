@@ -12,6 +12,7 @@ public class MyMain extends AppCompatActivity {
 
     private TextView mrfox;
     private SwipeRefreshLayout swipe;
+    private TextView texto;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,7 +20,9 @@ public class MyMain extends AppCompatActivity {
         Typeface face=Typeface.createFromAsset(getAssets(),"fonts/AmaticSC-Regular.ttf");
         swipe = (SwipeRefreshLayout) findViewById(R.id.swipe_container);
         mrfox = (TextView) findViewById(R.id.tv_MrFox);
+        texto = (TextView) findViewById(R.id.tv_texto);
         mrfox.setTypeface(face);
+        texto.setTypeface(face);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
