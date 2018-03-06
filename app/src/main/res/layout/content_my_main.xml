@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.pestar.pruebat2carlosortiz.MyMain"
+    tools:showIn="@layout/activity_my_main">
+
+    <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/forest"
+                tools:layout_editor_absoluteX="4dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/imagen"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/fox"
+
+                app:srcCompat="@drawable/fox" />
+
+            <TextView
+                android:id="@+id/tv_MrFox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="-50dp"
+                android:text="MrFox"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textSize="30dp" />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_custom"
+                android:text="Uninstall" />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="-50dp"
+                android:background="@drawable/button_custom2"
+                android:text="update"
+                android:textColor="@color/colorBlanco" />
+
+            <TextView
+                android:id="@+id/tv_texto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="50dp"
+                android:scrollbars="vertical"
+                android:text="Nombre de la aplicación “MrFox” y tema de nombre “MrFoxTheme” con estilos
+        personalizados que han sido extraídos para las diferentes Views (TextView /
+        EditText / Button)
+        • Utiliza el ic_launcher “fox.png”
+        • Utiliza un splash screen con una animación a tu elección (utiliza la tipografía
+        “AmaticSC-Regular.ttf”)
+        • Drawables y MipMaps para imágenes e iconos de todos los density buckets (MDPI,
+        HDPI XHDPI, XXHDPI)
+        • XML con la paleta de colores, estilos y strings (con el detalle de la Vista del Main
+        anexa como referencia, extrae una paleta de colores y dar a las pantallas de Login
+        y Splash un aspecto coherente con ella)Nombre de la aplicación “MrFox” y tema de nombre “MrFoxTheme” con estilos
+        personalizados que han sido extraídos para las diferentes Views (TextView /
+        EditText / Button)
+        • Utiliza el ic_launcher “fox.png”
+        • Utiliza un splash screen con una animación a tu elección (utiliza la tipografía
+        “AmaticSC-Regular.ttf”)
+        • Drawables y MipMaps para imágenes e iconos de todos los density buckets (MDPI,
+        HDPI XHDPI, XXHDPI)
+        • XML con la paleta de colores, estilos y strings (con el detalle de la Vista del Main
+        anexa como referencia, extrae una paleta de colores y dar a las pantallas de Login
+        y Splash un aspecto coherente con ella)" />
+        </LinearLayout>
+    </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</FrameLayout>
