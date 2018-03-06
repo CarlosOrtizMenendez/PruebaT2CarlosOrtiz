@@ -27,6 +27,10 @@ public class MyMain extends AppCompatActivity {
             @Override
             public void onRefresh() {
                 Snackbar.make(swipe, "Has refrescado la pagina", Snackbar.LENGTH_LONG).show();
+                if (swipe.isRefreshing()) {
+                    swipe.setRefreshing(false);
+                }
+
             }
         });
 
