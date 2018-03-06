@@ -7,7 +7,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
-public class SplashActivity extends AppCompatActivity implements Animation.AnimationListener{
+public class MySplash extends AppCompatActivity implements Animation.AnimationListener{
 
     ImageView Imagen;
     @Override
@@ -28,7 +28,7 @@ public class SplashActivity extends AppCompatActivity implements Animation.Anima
     @Override
     public void onAnimationEnd(Animation animation) {
 
-        Intent intent = new Intent(this, MrFox.class);
+        Intent intent = new Intent(this, MyLogin.class);
         startActivity(intent);
         finish();
     }
